@@ -6,17 +6,18 @@
 <meta name="theme-color" content="#0B2E4F">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Dradoezinhos">
-<meta name="description" content="Gestão da escola Dradoezinhos do Sul — chamada, turmas e financeiro.">
-<title>Dradoezinhos do Sul — Gestão</title>
+<meta name="apple-mobile-web-app-title" content="Dragoezinhos">
+<meta name="description" content="Gestão da escola Dragoezinhos do Sul — chamada, turmas e financeiro.">
+<title>Dragoezinhos do Sul — Gestão</title>
+<link rel="apple-touch-icon" href="https://susgrgdmelfrgppcsegr.supabase.co/storage/v1/object/public/drz/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://susgrgdmelfrgppcsegr.supabase.co/storage/v1/object/public/drz/icon-192.png">
 <style>
   html,body{height:100%;margin:0;background:#0B2E4F;color:#fff;
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
   #boot{height:100%;display:grid;place-items:center;text-align:center;padding:24px}
-  .crest{width:76px;height:76px;margin:0 auto 18px;border-radius:22px;
-    background:linear-gradient(150deg,#E08B1E,#B45F06);display:grid;place-items:center;
-    font-size:26px;font-weight:800;color:#0B2E4F;box-shadow:0 10px 28px rgba(0,0,0,.35)}
-  h1{font-size:19px;margin:0 0 6px;font-weight:700;letter-spacing:-.3px}
+  .crest{width:130px;height:auto;margin:0 auto 14px}
+  .crest img{width:100%;height:auto;display:block}
+  h1{font-size:20px;margin:0 0 6px;font-weight:700;letter-spacing:-.3px}
   p{font-size:13px;color:#A9C4DA;margin:0;line-height:1.5}
   .bar{width:150px;height:4px;border-radius:99px;background:#1B4A6F;margin:20px auto 0;overflow:hidden}
   .bar i{display:block;height:100%;width:40%;background:#E08B1E;border-radius:99px;
@@ -30,9 +31,9 @@
 <body>
 <div id="boot">
   <div>
-    <div class="crest">DRZ</div>
-    <h1>Dradoezinhos do Sul</h1>
-    <p>Escola oficial do Itabuna EC</p>
+    <div class="crest"><img src="https://susgrgdmelfrgppcsegr.supabase.co/storage/v1/object/public/drz/mascote.png" alt=""></div>
+    <h1>Dragoezinhos do Sul</h1>
+    <p>Escola oficial do Itabuna Esporte Clube</p>
     <div class="bar"><i></i></div>
   </div>
 </div>
@@ -45,7 +46,7 @@
 
   function falhou(msg) {
     document.getElementById('boot').innerHTML =
-      '<div class="fail"><div class="crest">DRZ</div>' +
+      '<div class="fail"><div class="crest"><img src="https://susgrgdmelfrgppcsegr.supabase.co/storage/v1/object/public/drz/mascote.png" alt=""></div>' +
       '<h1>Nao foi possivel abrir</h1>' +
       '<p>' + msg + '</p>' +
       '<button onclick="location.reload()">Tentar de novo</button></div>';
