@@ -6,12 +6,30 @@
 <meta name="theme-color" content="#0B2E4F">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Dragõezinhos">
-<meta name="description" content="Gestão da escola Dragõezinhos do Sul — chamada, turmas e financeiro.">
+<meta name="apple-mobile-web-app-title" content="Dragõezinhos Gestão">
+<meta name="description" content="Sistema de gestão da escola Dragõezinhos do Sul: chamada, turmas, frequência e mensalidades.">
 <meta name="robots" content="noindex, nofollow">
-<title>Dragõezinhos do Sul — Gestão</title>
-<link rel="apple-touch-icon" href="https://susgrgdmelfrgppcsegr.supabase.co/storage/v1/object/public/drz/apple-touch-icon.png">
-<link rel="icon" type="image/png" href="https://susgrgdmelfrgppcsegr.supabase.co/storage/v1/object/public/drz/icon-192.png">
+<title>Dragõezinhos do Sul — Gestão da escola</title>
+
+<!-- compartilhamento (WhatsApp) -->
+<meta property="og:site_name" content="Dragõezinhos do Sul">
+<meta property="og:title" content="Dragõezinhos do Sul — Gestão da escola">
+<meta property="og:description" content="Sistema interno da escola: chamada, turmas, frequência e mensalidades. Acesso por PIN.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dragoezinhosdosul.com.br/app.html">
+<meta property="og:image" content="https://susgrgdmelfrgppcsegr.supabase.co/storage/v1/object/public/drz/og-gestao.jpg">
+<meta property="og:image:secure_url" content="https://susgrgdmelfrgppcsegr.supabase.co/storage/v1/object/public/drz/og-gestao.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sistema de gestão dos Dragõezinhos do Sul">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://susgrgdmelfrgppcsegr.supabase.co/storage/v1/object/public/drz/og-gestao.jpg">
+
+<link rel="icon" type="image/png" sizes="192x192" href="https://susgrgdmelfrgppcsegr.supabase.co/storage/v1/object/public/drz/mascote-icone-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="https://susgrgdmelfrgppcsegr.supabase.co/storage/v1/object/public/drz/mascote-icone-512.png">
+<link rel="apple-touch-icon" href="https://susgrgdmelfrgppcsegr.supabase.co/storage/v1/object/public/drz/apple-touch-mascote.png">
 <style>
   html,body{height:100%;margin:0;background:#0B2E4F;color:#fff;
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
@@ -33,7 +51,7 @@
 <body>
 <div id="boot">
   <div>
-    <div class="crest"><img src="https://susgrgdmelfrgppcsegr.supabase.co/storage/v1/object/public/drz/mascote.png" alt=""></div>
+    <div class="crest"><img src="https://susgrgdmelfrgppcsegr.supabase.co/storage/v1/object/public/drz/mascote-icone-512.png" alt="Dragãozinho"></div>
     <h1>Dragõezinhos do Sul</h1>
     <p>Gestão da escola</p>
     <div class="bar"><i></i></div>
@@ -49,7 +67,7 @@
 
   function falhou(msg) {
     document.getElementById('boot').innerHTML =
-      '<div class="fail"><div class="crest"><img src="https://susgrgdmelfrgppcsegr.supabase.co/storage/v1/object/public/drz/mascote.png" alt=""></div>' +
+      '<div class="fail"><div class="crest"><img src="https://susgrgdmelfrgppcsegr.supabase.co/storage/v1/object/public/drz/mascote-icone-512.png" alt=""></div>' +
       '<h1>Nao foi possivel abrir</h1>' +
       '<p>' + msg + '</p>' +
       '<button onclick="location.reload()">Tentar de novo</button>' +
