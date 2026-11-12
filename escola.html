@@ -2,12 +2,72 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="refresh" content="0; url=site.html">
-<title>Dragõezinhos do Sul — Escola Oficial do Itabuna EC</title>
-<link rel="canonical" href="https://dragoezinhosdosul.github.io/site.html">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0B2E4F">
+<meta name="apple-mobile-web-app-title" content="Dragõezinhos do Sul">
+<meta name="description" content="Escola oficial de futebol do Itabuna Esporte Clube. Formação esportiva para crianças e adolescentes de 6 a 16 anos, em 4 unidades. Agende uma aula experimental gratuita.">
+<title>Dragõezinhos do Sul — Escola Oficial do Itabuna Esporte Clube</title>
+<meta property="og:title" content="Dragõezinhos do Sul — Escola Oficial do Itabuna EC">
+<meta property="og:description" content="Formação além do futebol, para crianças e adolescentes de 6 a 16 anos. Agende uma aula experimental gratuita.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://susgrgdmelfrgppcsegr.supabase.co/storage/v1/object/public/drz/mascote.png">
+<link rel="icon" type="image/png" href="https://susgrgdmelfrgppcsegr.supabase.co/storage/v1/object/public/drz/icon-dragao-192.png">
+<link rel="apple-touch-icon" href="https://susgrgdmelfrgppcsegr.supabase.co/storage/v1/object/public/drz/icon-dragao-180.png">
+<style>
+  html,body{height:100%;margin:0;background:#0B2E4F;color:#fff;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+  #boot{height:100%;display:grid;place-items:center;text-align:center;padding:24px}
+  .crest{width:120px;margin:0 auto 14px}
+  .crest img{width:100%;height:auto;display:block}
+  h1{font-size:19px;margin:0 0 6px;font-weight:700}
+  p{font-size:13px;color:#A9C4DA;margin:0;line-height:1.5}
+  .bar{width:150px;height:4px;border-radius:99px;background:#1B4A6F;margin:20px auto 0;overflow:hidden}
+  .bar i{display:block;height:100%;width:40%;background:#E08B1E;border-radius:99px;
+    animation:m 1.1s infinite ease-in-out}
+  @keyframes m{0%{transform:translateX(-110%)}100%{transform:translateX(310%)}}
+  .fail{max-width:330px;margin:0 auto}
+  .fail button{margin-top:18px;padding:12px 20px;border-radius:12px;border:0;
+    background:#E08B1E;color:#0B2E4F;font-weight:700;font-size:14px}
+</style>
 </head>
-<body style="font-family:sans-serif;padding:24px;text-align:center">
-<p>Carregando… <a href="site.html">Clique aqui se não abrir</a></p>
+<body>
+<div id="boot">
+  <div>
+    <div class="crest"><img src="https://susgrgdmelfrgppcsegr.supabase.co/storage/v1/object/public/drz/mascote.png" alt=""></div>
+    <h1>Dragõezinhos do Sul</h1>
+    <p>Escola oficial do Itabuna Esporte Clube</p>
+    <div class="bar"><i></i></div>
+  </div>
+</div>
+<script>
+/* O site institucional fica na fonte unica (Supabase Storage) e esta pagina
+   curta o carrega. Assim o endereco do GitHub Pages nunca muda e o site pode
+   ser atualizado sem republicar. */
+(function () {
+  var SRC = 'https://susgrgdmelfrgppcsegr.supabase.co/storage/v1/object/public/drz/site.html';
+
+  function falhou() {
+    document.getElementById('boot').innerHTML =
+      '<div class="fail"><div class="crest"><img src="https://susgrgdmelfrgppcsegr.supabase.co/storage/v1/object/public/drz/mascote.png" alt=""></div>' +
+      '<h1>Nao foi possivel abrir</h1>' +
+      '<p>Verifique a internet e tente de novo.</p>' +
+      '<button onclick="location.reload()">Tentar de novo</button>' +
+      '<p style="margin-top:14px">Matriculas: (73) 98107-6221</p></div>';
+  }
+
+  fetch(SRC + '?v=' + Date.now(), { cache: 'no-store' })
+    .then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.text();
+    })
+    .then(function (html) {
+      if (!html || html.indexOf('<!DOCTYPE') !== 0) throw new Error('invalido');
+      document.open();
+      document.write(html);
+      document.close();
+    })
+    .catch(falhou);
+})();
+</script>
 </body>
 </html>
